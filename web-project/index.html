@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<style>
+    @media screen and (max-width: 600px) {
+        .section-index .main-slider .card-form {
+            width: auto !important;
+            float: unset;
+            margin-top: -5px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .section-2-adversting img,
+        .section-search .advertising-search img,
+        .section-search .advertising-wedding img,
+        .section-search .advertising-home img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .section-index .main-slider {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        visibility: inherit;
+        float: left;
+    }
+
+    .card-form {
+        width: 340px;
+        left: 5%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 6px;
+        box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 0px;
+        padding: 25px;
+        margin-top: 0.75rem;
+
+    }
+</style>
+
+<body>
+    <div class="header-line ">
+
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#"><img src="./img/rasel-logo.png" alt="" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: space-between;">
+                    <div>
+                        <ul class="navbar-nav  ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    التصنيفات
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink ">
+                                    <li><a class="dropdown-item" href="#">الاثاث المنزلي</a></li>
+                                    <li><a class="dropdown-item" href="#">الاثات المنزلي </a></li>
+                                    <li><a class="dropdown-item" href="#">الاثات المنزلي </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-header text-center d-flex">
+                        <button class="btn btn-success btn-sm ml-3"> <i class="fa fa-plus" aria-hidden="true"> </i> سجل  كمورد</button>
+                        <a class="nav-link " href="">
+                            <div class="search">
+                                <svg viewBox="0 0 32 32" style="color: rgb(105, 103, 102);" width="20" height="20">
+                                    <defs>
+                                        <path id="iconSearchFill_svg__a"
+                                            d="M21.464 24.053c-2.152 1.506-4.936 2.268-8.303 2.268C4.797 26.321 0 21.524 0 13.161 0 4.797 4.797 0 13.161 0c8.363 0 13.16 4.797 13.16 13.161 0 3.566-.865 6.47-2.555 8.669l8.04 8.038-2.263 2.263-8.079-8.078zm-8.303-.848c3.245 0 5.758-.867 7.468-2.576 1.709-1.71 2.576-4.223 2.576-7.468 0-6.477-3.567-10.044-10.044-10.044-6.478 0-10.044 3.567-10.044 10.044s3.566 10.044 10.044 10.044z">
+                                        </path>
+                                    </defs>
+                                    <use fill="currentColor" xlink:href="#iconSearchFill_svg__a" fill-rule="evenodd"></use>
+                                </svg>
+                                <div class="text" style="font-size: 13px; color: rgb(105, 103, 102);">
+                                    البحث
+                                </div>
+                            </div>
+                        </a>
+                        <a  class="nav-link"href="">
+                            <div class="wishlist position-relative">
+                                <svg viewBox="0 0 32 32" color="#696766" width="20" height="20">
+                                    <defs>
+                                        <path id="iconFavorit_svg__a"
+                                            d="M6.997 1.998c-1.346 0-2.548.436-3.493 1.339-2.73 2.608-1.676 7.529 2.562 11.965 2.743 2.87 8.259 6.21 9.934 7.192 1.675-.982 7.193-4.323 9.933-7.192 4.24-4.436 5.292-9.357 2.563-11.965C25.784.746 20.94 1.997 16.72 6.382L16 7.13l-.72-.748c-2.75-2.857-5.766-4.384-8.283-4.384zM16 24.8l-.492-.28c-.303-.171-7.445-4.234-10.887-7.837-5.052-5.287-6.08-11.37-2.499-14.792C5.516-1.348 11.124-.343 16 4.281c4.875-4.624 10.485-5.63 13.878-2.39 3.58 3.421 2.553 9.505-2.499 14.792-3.442 3.603-10.584 7.666-10.887 7.838L16 24.8z">
+                                        </path>
+                                    </defs>
+                                    <use fill="currentColor" xlink:href="#iconFavorit_svg__a" fill-rule="evenodd" transform="translate(0 4)">
+                                    </use>
+                                </svg>
+                                <div class="text" style="font-size: 13px; color: rgb(105, 103, 102);">
+                                    المفضلة
+                                </div>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill " style="background-color: #7600d9;">+2<span
+                                    class="visually-hidden">unread messages</span></span>
+                            </div>
+                        </a>
+                    <a  class="nav-link" href="">
+                        <div class="cart position-relative">
+                            <i class="fa fa-shopping-cart" aria-hidden="true" style="color: rgb(105, 103, 102);"></i>
+                            <div class="text" style="font-size: 13px; color: rgb(105, 103, 102);">
+                                سلة المشتريات
+                            </div>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill "  style="background-color: #7600d9;">+2<span
+                                class="visually-hidden">unread messages</span></span>
+                        </div>
+                    </a>
+                        <a class="nav-link" href="#">
+                            <div class="signin">
+                                <svg viewBox="0 0 32 32" color="#696766" width="20" height="20">
+                                    <defs>
+                                        <path id="iconLogin_svg__a"
+                                            d="M16 30c-4.992 0-8.737-1.527-11.094-4.413 2.362-.829 6.498-1.35 10.946-1.35 5.194 0 9.137.674 11.169 1.433C24.66 28.5 20.942 30 16 30m0-28c9.028 0 14 4.972 14 14 0 3.181-.63 5.847-1.824 7.98-2.5-1.082-7.106-1.743-12.324-1.743-5.007 0-9.531.631-12.077 1.653C2.613 21.771 2 19.136 2 16 2 6.972 6.972 2 16 2m0-2C5.832 0 0 5.832 0 16s5.832 16 16 16 16-5.832 16-16S26.168 0 16 0m0 8.37a4.568 4.568 0 014.563 4.562A4.568 4.568 0 0116 17.495a4.568 4.568 0 01-4.563-4.563A4.568 4.568 0 0116 8.37m0 11.126a6.57 6.57 0 01-6.563-6.563A6.57 6.57 0 0116 6.37a6.57 6.57 0 016.563 6.563A6.57 6.57 0 0116 19.495zm-.027-4.008a3.17 3.17 0 003.057-2.343h-6.115a3.17 3.17 0 003.058 2.343z">
+                                        </path>
+                                    </defs>
+                                    <use fill="currentColor" xlink:href="#iconLogin_svg__a" fill-rule="evenodd">
+                                    </use>
+                                </svg>
+                                <div class="text" style="font-size: 13px; color: rgb(105, 103, 102);">
+                                    تسجيل الدخول
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr class="m-0 pt">
+    <div class="section-index ">
+        <div class="div-main-slider-image  position-relative ">
+            <div class="main-slider "
+                style="background-image: url('https://www.accord.ps/Modules/Website/Resources/assets/images/slider-2.jpg'); height:385px;">
+                <div class="container  ">
+                    <!-- <div class="row" > -->
+                    <div class="card-form col-lg-3 col-md-5 col-ms-12  pb-3 position-absolute " style="float: left;">
+                        <form action="">
+                            <h3 class="text-center"> كل المراحب والله</h3>
+                            <p class="text-center">ضيفوا البيانات مشان تتمتعوا بالعديد من الميزات</p>
+                            <div class="mb-3">
+                                <label for="" class="form-label"> رقم الجوال</label>
+                                <input type="text" class="form-control" placeholder="ادخل رقم الجوال">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label"> الاسم بالكامل </label>
+                                <input type="text" class="form-control" placeholder="ادخل الاسم  ">
+                            </div>
+                            <button type="submit" class="btn text-light w-100"
+                                style=" background-color: #7600d9; height: 40px;"> ارسل</button>
+                        </form>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container d-block d-sm-none mt-2 mb-2">
+        <img class="w-100 mt-2" src="https://www.accord.ps/Modules/Website/Resources/assets/images/mobile/slider-2.jpg"
+            alt="" style="border-radius: 4px">
+    </div>
+    <div class="color-item" style=" background-color: #f9f7f6;">
+        <div class="container">
+            <div class="items">
+                <h4>اكتشف اصنافنا</h4>
+                <p class="categories">كل التصنيفات</p>
+                <div class="all-items">
+
+                    <div class="item">
+                        <img src="./img/c0.png" alt="">
+                        <p> الاثاث المنزلي</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c1.png" alt="">
+                        <p>الاجهزة الكهربائية</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c3.png" alt="">
+                        <p> بدل الزفاف</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c2.png" alt="">
+                        <p>صالات الافراح</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c4.png" alt="">
+                        <p> الكوافيرات</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c5.png" alt="">
+                        <p> بطاقات الافراح</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c6.png" alt="">
+                        <p>تزيين الورود</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c8.png" alt="">
+                        <p>استديوهات التصوير</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c7.png" alt="">
+                        <p>تاجير الباصات</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c9.png" alt="">
+                        <p>المطابخ</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c10.png" alt="">
+                        <p>الفنادق</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/c11.png" alt="">
+                        <p>فنون استعراضيه</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c12.png" alt="">
+                        <p>المسارح</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c13.png" alt="">
+                        <p>بدل رجالي</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c14.png" alt="">
+                        <p>حلويات</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c15.png" alt="">
+                        <p>مفروشات</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/c16.png" alt="">
+                        <p>ادوات منزلية</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/categories.png" alt="">
+                        <p> كل التصنيفات</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pt-3">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/adv1-2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">كورد، القصة، وبناء الثقة</h5>
+                                <p class="card-text">من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر
+                                    لدينا،
+                                    يمكننا توفير
+                                    تجربة
+                                    تسوق أكثر
+                                    شمولية، ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات ...</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/adv2 (1).jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">الشراكات، الطريق للراحة والتحكم</h5>
+                                <p class="card-text">من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر
+                                    لدينا،
+                                    يمكننا توفير تجربة
+                                    تسوق أكثر
+                                    شمولية، ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات ...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/adv3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">المنتجات وقوة موردينا</h5>
+                                <p class="card-text">الأفضل أمام عينك، مع وجود خطة تمكن الفريق من جلب منتجات عديدة
+                                    بمواصفات حقيقية، كان
+                                    لابد
+                                    من وجود
+                                    العديد من الاعتبارات التي نأخذها ليكون أحدهم من موردينا ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2-adversting pb-2 pt-3">
+                <div class="container">
+                    <a href=""><img class="advertising-1 d-none"
+                            src="https://www.accord.ps/Modules/Website/Resources/assets/images/adv-1.jpg" alt=""></a>
+                    <div class="d-none d-sm-block">
+                        <img class="advertising-2 d-none"
+                            src="https://www.accord.ps/Modules/Website/Resources/assets/images/mobile/adv2-mobile.gif"
+                            alt="">
+                        <img class="advertising-3"
+                            src="https://www.accord.ps/Modules/Website/Resources/assets/images/adv-2.jpg" alt="">
+                    </div>
+
+                    <div class="d-block d-sm-none">
+                        <img class="advertising-2 d-none"
+                            src="https://www.accord.ps/Modules/Website/Resources/assets/images/mobile/adv2-mobile.gif"
+                            alt="">
+                        <img class="advertising-3"
+                            src="https://www.accord.ps/Modules/Website/Resources/assets/images/mobile/adv3-mobile.gif"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pt-3">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/art1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">كيف تخطط لحفل زفاف بأفضل التكاليف</h5>
+                                <p class="card-text">من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر
+                                    لدينا،
+                                    يمكننا توفير
+                                    تجربة
+                                    تسوق أكثر
+                                    شمولية، ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات ...</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/art2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">كيف تدفع لحفل زفافك؟</h5>
+
+                                <p class="card-text">من خلال إضافة خيار التقسيط إلى خيارات الدفع الكاش المتوفر
+                                    لدينا،
+                                    يمكننا توفير
+                                    تجربة
+                                    تسوق أكثر
+                                    شمولية، ومنح عملائنا مزيداً من الراحة والتحكم والوصول إلى خيارات ...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/art3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"> 10 نصائح لشراء منتجات واختيار لفرحك </h5>
+                                <p class="card-text">الأفضل أمام عينك، مع وجود خطة تمكن الفريق من جلب منتجات عديدة
+                                    بمواصفات حقيقية،
+                                    كان
+                                    لابد
+                                    من وجود
+                                    العديد من الاعتبارات التي نأخذها ليكون أحدهم من موردينا ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pt-3">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card ">
+                            <img src="img/temporary-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">باقات أفراح صيف 2023</h5>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/permanent-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">احدث العروض</h5>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="img/individual-offers.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">العروض الفردية </h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-line ">
+    </div>
+    <div class="container pt-3 ">
+        <div class="row my-2">
+            <div class="col-12 col-xl-4">
+                <h5>للاتصال بنا</h5>
+                <p>يسرنا التواصل معنا من خلال القنوات المتاحه</p>
+                <div class="row">
+                    <div class="col-6">
+                        <h6>ارقام التاوصل</h6>
+                        <p>170005440</p>
+                        <h6>العنوان</h6>
+                        <p>فلسطين ,غزه,مقابل البوابه الشماليه لجمامعه الازهر</p>
+                    </div>
+                    <div class="col-6">
+                        <h6> البريد الالكتروني</h6>
+                        <p>info@acord.com</p>
+                        <h6>ساعات العمل</h6>
+                        <p>السبت -الخميس <br>صباحا-3:30 مساء 9:00 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+                <h5>المعلومات</h5>
+                <ul id="foo">
+                    <li class="nav-item"> من نحن</li>
+                    <li class="nav-item"> سياسه الخصوصيه</li>
+                    <li class="nav-item">للاتصال بنا</li>
+                    <li class="nav-item">الاسئله الشائعه</li>
+                    <li class="nav-item"> مورد جديد</li>
+
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 col-xl-2">
+                <h5>الملف الشخصي</h5>
+                <ul id="foo">
+                    <li class="nav-item"> التسجيل </li>
+                    <li class="nav-item"> تسجيل الدخول</li>
+                    <li class="nav-item"> المفضله </li>
+                    <li class="nav-item"> سله المشتريات</li>
+                    <li class="nav-item">السله </li>
+
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <h5>قائمه الواتس اب</h5>
+                <p>انضم الى القائمه الخاصه بالمنصه للبقاء ع اطلاع باحدث الخصومات والعروض الخاصه</p>
+                <form action="">
+                    <input type="number" class="ps-1 me-2 " placeholder="رقم الواتس اب...">
+                    <button type="button" class="btn btn-sm mb-1 " style="background: #7e57c6;
+                                                                            cursor: pointer;">للاشتراك</button>
+
+                </form>
+                <div class="my-3">
+                    <h6>وسائل التواصل الاجتماعي</h6>
+                    <i class="fa-brands fa-facebook fs-3" style="color: #1c0461;"></i>
+                    <i class="fa-brands fa-instagram fs-3" style="color: #7600d9;"></i>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
